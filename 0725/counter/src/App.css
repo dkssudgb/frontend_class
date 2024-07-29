@@ -1,0 +1,47 @@
+body {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: darkgreen;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  background-color: #d7e4d6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 3rem;
+  color: #adc5ac;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 1px #3f733f;
+}
+
+.Controller button {
+  border: goldenrod;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  font-style: oblique;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
