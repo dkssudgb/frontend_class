@@ -1,0 +1,41 @@
+.TodoEditor .editor_wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.TodoEditor input {
+    flex: 1;
+    box-sizing: border-box;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.TodoEditor input:focus {
+    outline: none;
+    border: 1px solid rgb(255, 220, 225);
+}
+
+.TodoEditor button {
+    cursor: pointer;
+    width: 80px;
+    background-color: rgb(255, 220, 225);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.TodoList .searchbar {
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid rgb(220, 220, 220);
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.TodoList .searchbar:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(255, 220, 225);
+}
