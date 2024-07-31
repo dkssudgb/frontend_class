@@ -3,3 +3,7 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.TodoList .checkboxItem:checked {
+    color: gray;
+}
