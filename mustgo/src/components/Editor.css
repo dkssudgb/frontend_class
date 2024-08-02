@@ -1,0 +1,67 @@
+.Editor {
+    background-color: rgba(204, 227, 236, 0.5);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.Editor p {
+    width: 70px;
+}
+
+.Editor h3 {
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(192, 219, 230);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.Editor .editor_wrapper {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+    /* background-color: rgb(255, 232, 232);/ */
+    align-items: center;
+    border-radius: 5px;
+}
+
+.Editor input {
+    flex: 1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(225, 220, 225);
+    padding: 15px;
+    height: 40px;
+}
+
+.Editor input:focus {
+    outline: none;
+    border: 1px solid rgb(255, 220, 225);
+}
+
+.Editor button {
+    cursor: pointer;
+    width: 80px;
+    padding: 5px;
+    background-color: rgb(163, 205, 221);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.List .searchbar {
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid rgb(220, 220, 220);
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.List .searchbar:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(255, 220, 225);
+}

@@ -1,0 +1,9 @@
+.Header h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    /* background-color:rgb(255, 220, 225); */
+}
+
+.Header p {
+    color: gray;
+}

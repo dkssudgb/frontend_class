@@ -1,0 +1,9 @@
+.List .list_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.List .checkboxItem:checked {
+    color: gray;
+}
