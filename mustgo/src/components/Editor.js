@@ -11,7 +11,9 @@ const Editor = ({onCreate}) => {
         memo: ''
     });
     const {rest, location, memo} = inputs;
-    const inputRef = useRef();
+    const ref_rest = useRef();
+    const ref_location = useRef();
+    const ref_memo = useRef();
     const [isError, setIsError] = useState(false);
     const [star, setStar] = useState([false, false, false, false, false]);
 
@@ -22,10 +24,21 @@ const Editor = ({onCreate}) => {
             [name]: value
         });
     };
+
     const onSubmit = () => {
-        if (!rest | !location | !memo) {
+        if (!rest) {
             setIsError(true);
-            inputRef.current.focus();
+            ref_rest.current.focus();
+            return;
+        }
+        if (!location) {
+            setIsError(true);
+            ref_location.current.focus();
+            return;
+        }
+        if (!memo) {
+            setIsError(true);
+            ref_memo.current.focus();
             return;
         }
         onCreate(rest, location, memo);
@@ -52,13 +65,14 @@ const Editor = ({onCreate}) => {
             <div className="editor_wrapper">
                 <p>식당 이름</p>
                 <input
-                    ref={inputRef}
+                    ref={ref_rest}
                     id="rest"
                     name="rest"  
                     value={rest}
                     onChange={onChange}
                     placeholder={isError? "내용을 입력하세요" : "식당 이름 입력"} 
-                    style={{borderColor: isError? "red" : "initial"}} 
+                    style={{borderColor: isError? "red" : "initial"}}
+                    onKeyDown={onKeyDown}
                 />
             </div>
             <div className="editor_wrapper">
@@ -72,19 +86,20 @@ const Editor = ({onCreate}) => {
             <div className="editor_wrapper">
                 <p>식당 위치</p>
                 <input
-                    ref={inputRef}
+                    ref={ref_location}
                     id="location"
                     name="location"
                     value={location}
                     onChange={onChange}
                     placeholder={isError? "내용을 입력하세요" : "식당 위치 입력"} 
-                    style={{borderColor: isError? "red" : "initial"}} 
+                    style={{borderColor: isError? "red" : "initial"}}
+                    onKeyDown={onKeyDown}
                 />
             </div>
             <div className="editor_wrapper">
                 <p>한줄메모</p>
                 <input
-                    ref={inputRef}
+                    ref={ref_memo}
                     id="memo"
                     name="memo"
                     value={memo}

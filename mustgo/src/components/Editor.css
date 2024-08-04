@@ -32,7 +32,8 @@
     flex: 1;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid rgb(225, 220, 225);
+    border: ridge;
+
     padding: 15px;
     height: 40px;
 }
@@ -49,6 +50,8 @@
     background-color: rgb(163, 205, 221);
     border-radius: 5px;
     border: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .List .searchbar {
