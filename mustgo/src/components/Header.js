@@ -1,17 +1,17 @@
 import "./Header.css";
 
 const Header = () => { 
-    const week = new Array(["일", "월", "화", "수", "목", "금", "토"]);
-    const today = new Date();
+    let week = ["일", "월", "화", "수", "목", "금", "토"];
+    let today = new Date();
 
-    const year = today.getFullYear();
-    const month = today.getMonth() + 1;
-    const day = today.getDate();
-    const dayname = week[today.getDay()];
+    let year = today.getFullYear();
+    let month = today.getMonth() + 1;
+    let day = today.getDate();
+    let weekday = week[today.getDay()];
 
     return (
         <div className="Header">
-            <p>{year+"년 " + month+"월 " + day+"일 " + dayname+"요일"}</p>
+            <p>{year+"년 " + month+"월 " + day+"일 " + weekday+"요일"}</p>
             <h1>😋나만의 맛집 리스트🍴</h1>
         </div>
     );
