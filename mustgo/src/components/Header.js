@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className="Header">
             <p>{year+"년 " + month+"월 " + day+"일 " + weekday+"요일"}</p>
-            <h1>😋나만의 맛집 리스트🍴</h1>
+            <h1>😋나만의 맛집🍴</h1>
         </div>
     );
 };

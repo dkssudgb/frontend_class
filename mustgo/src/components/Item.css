@@ -1,29 +1,66 @@
-.TodoItem {
+.Item {
+    background-color: rgba(204, 227, 236, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.first_line {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgb(240, 240, 240);
+    justify-content: space-between;
 }
 
-.TodoItem .checkbox_col {
-    width: 20px;
+.name_col {
+    font-size: 18px;
 }
 
-.TodoItem .title_col {
-    flex: 1;
+.rating_col {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.TodoItem .date_col {
+.star_filled {
+    background: url("../img/star_filled.png") no-repeat center center;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+
+.star_empty {
+    background: url("../img/star_empty.png") no-repeat center center;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+}
+
+.second_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location_col {
     font-size: 14px;
-    color: gray;
+    color: dimgray;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
-.TodoItem .btn_col {
+.memo_col {
+    font-size: 14px;
+    color: dimgray;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.btn_col {
+    text-align: right;
     cursor: pointer;
     color: gray;
     font-size: 14px;
     border: none;
-    border-radius: 5px;
     padding: 5px;
+}
+
+.btn_col button {
+    font-family: "Jua", sans-serif;
 }

@@ -8,6 +8,7 @@
 
 .Editor p {
     width: 70px;
+    text-align: center;
 }
 
 .Editor h3 {
@@ -23,7 +24,6 @@
     display: flex;
     margin-bottom: 10px;
     gap: 10px;
-    /* background-color: rgb(255, 232, 232);/ */
     align-items: center;
     border-radius: 5px;
 }
@@ -33,14 +33,44 @@
     box-sizing: border-box;
     border-radius: 5px;
     border: ridge;
-
     padding: 15px;
     height: 40px;
+    font-family: "Jua", sans-serif;
 }
 
 .Editor input:focus {
     outline: none;
-    border: 1px solid rgb(255, 220, 225);
+    border: 1px solid #6f6f6f;
+}
+
+.star_rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 3px;
+}
+
+.star_rating input[type="radio"] {
+    display: none;
+}
+
+.star_rating label {
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-left: 5px;
+    background: url("../img/star_empty.png") no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.star_rating label.filled {
+    background: url("../img/star_filled.png") no-repeat center center;
+    background-size: contain;
+}
+
+.star_rating label.empty {
+    background: url("../img/star_empty.png") no-repeat center center;
+    background-size: contain;
 }
 
 .Editor button {
@@ -49,9 +79,10 @@
     padding: 5px;
     background-color: rgb(163, 205, 221);
     border-radius: 5px;
-    border: 0px;
+    border: 0;
     margin-left: 5px;
     margin-right: 5px;
+    font-family: "Jua", sans-serif;
 }
 
 .List .searchbar {
@@ -62,9 +93,10 @@
     box-sizing: border-box;
     padding-top: 15px;
     padding-bottom: 10px;
+    font-family: "Jua", sans-serif;
 }
 
 .List .searchbar:focus {
     outline: none;
-    border-bottom: 3px solid rgb(255, 220, 225);
+    border-bottom: 3px solid rgb(192, 219, 230);
 }
